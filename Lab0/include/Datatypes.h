@@ -1,8 +1,11 @@
-#include <string>
-#include <set>
+// Creado: Kurogami2134 11/03/2026 23:30
+// Actualizado: Kurogami2134 12/03/2026 10:30
 
 #ifndef DATATYPES
 #define DATATYPES
+
+#include <string>
+#include <set>
 
 typedef std::string string;
 typedef std::set<string> string_set;
