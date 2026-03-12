@@ -17,7 +17,7 @@ EventoCultural::~EventoCultural () {  // TODO
 }
 
 float EventoCultural::calcularCosto () {  // TODO: (precioBase - (usoCupon? 5: 0)) * cantTuristas
-    return 1.0;
+    return (getPrecioBase() - (usoCupon? 5: 0))*turistas.size();
 }
 
 #endif

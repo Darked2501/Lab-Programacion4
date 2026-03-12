@@ -11,6 +11,7 @@ class EventoCultural: public Experiencia {
     private:
         string ubicacion;
         bool usoCupon;
+        string_set turistas;
     public:
         EventoCultural(string codigo, string desc, int precio, DTFecha fecha, string ubicacion, bool cupon);
         ~EventoCultural();
