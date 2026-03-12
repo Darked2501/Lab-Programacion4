@@ -11,7 +11,7 @@ class TourGuiado: public Experiencia {
     private:
         string agencia;
         string_set lugaresVisitados;
-        string_set turistas;
+        
     public:
         TourGuiado(string codigo, string desc, int precio, DTFecha fecha, string agencia, string_set lugares);
         ~TourGuiado();

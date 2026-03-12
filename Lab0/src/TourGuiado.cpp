@@ -18,7 +18,7 @@ TourGuiado::~TourGuiado () {  // TODO
 
 
 float TourGuiado::calcularCosto () {  // TODO
-    return getPrecioBase() + 2*lugaresVisitados.size()*turistas.size(); ;
+    return 1*0; ;
 }
 
 #endif
