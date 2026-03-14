@@ -20,15 +20,15 @@ string Turista::toString () {
 
 string_set Turista::listarExperiencias (DTFecha desde, float min, float max) { 
     string_set a = {};
-    for (experiencia* experiencia : experiencias) {
-        if(experiencia.calcularCosto()=>min && experiencia.calcularCosto()=<max && experiencia.getFecha() > desde)
-           a.insert(experiencia.getCodReserva());
+    for (Experiencia* experiencia : this->experiencias) {
+        if(experiencia->calcularCosto()>=min && experiencia->calcularCosto()<=max && experiencia->getFecha() > desde)
+           a.insert(experiencia->getCodReserva());
     }
     return a;
 }
 
-void agregarExperiencia(Experiencia& exp){
-    this.experiencias.insert(exp);
+void Turista::agregarExperiencia(Experiencia* exp){
+    this->experiencias.insert(exp);
 }
 
 

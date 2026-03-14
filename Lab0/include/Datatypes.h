@@ -6,6 +6,7 @@
 
 #include <string>
 #include <set>
+#include "DTFecha.h"
 
 typedef std::string string;
 typedef std::set<string> string_set;

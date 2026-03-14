@@ -1,10 +1,14 @@
 // Creado: federicogravagno-creator 11/03/2026 23:30
-// Actualizado: Darked2501 14/03/2026 13:00
+// Actualizado: Darked2501 14/03/2026 14:00
 
 #ifndef EXPERIENCIA_H
 #define EXPERIENCIA_H
 
 #include "Datatypes.h"
+#include "DTFecha.h"
+
+//forward declaration(referencia circular)//
+class Turista;
 
 /* Definimos la clase experiencia */
 class Experiencia {
@@ -14,8 +18,7 @@ class Experiencia {
     int precioBase;
     DTFecha fecha;
 
-    std:set<Turista*> turista;
-
+    std::set<Turista*> turistas;
 
     public:
     //creador/Destructor//
