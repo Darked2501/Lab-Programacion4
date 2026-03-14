@@ -1,5 +1,5 @@
 // Creado: federicogravagno-creator 11/03/2026 23:30
-// Actualizado: Kurogami2134 12/03/2026 10:30
+// Actualizado: Darked2501 14/03/2026 13:00
 
 #ifndef EXPERIENCIA_H
 #define EXPERIENCIA_H
@@ -13,6 +13,9 @@ class Experiencia {
     string descripcion;
     int precioBase;
     DTFecha fecha;
+
+    std:set<Turista*> turista;
+
 
     public:
     //creador/Destructor//
@@ -37,6 +40,10 @@ class Experiencia {
 
     //Extras//
     virtual float calcularCosto() = 0;
+    //Se define este operador para poder usar set(necesita ordenes entre objetos)//
+    bool operator<(const Experiencia& other) const {
+        return codReserva < other.codReserva;
+    }
     
 
 };
