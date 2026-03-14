@@ -1,11 +1,12 @@
 // Creado: federicogravagno-creator 11/03/2026 23:30
-// Actualizado: Kurogami2134 12/03/2026 10:30
+// Actualizado: Darked2501 14/03/2026 14:00
 
 #ifndef ALOJAMIENTO_H
 #define ALOJAMIENTO_H
 
 #include "Experiencia.h"
 #include "Datatypes.h"
+#include "DTFecha.h"
 
 class Alojamiento : public Experiencia {
 private:

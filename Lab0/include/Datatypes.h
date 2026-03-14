@@ -1,11 +1,12 @@
 // Creado: Kurogami2134 11/03/2026 23:30
-// Actualizado: Kurogami2134 12/03/2026 10:30
+// Actualizado: Darked2501 14/03/2026 14:00
 
 #ifndef DATATYPES
 #define DATATYPES
 
 #include <string>
 #include <set>
+#include "DTFecha.h"
 
 typedef std::string string;
 typedef std::set<string> string_set;
@@ -13,10 +14,6 @@ typedef std::set<string> string_set;
 enum TipoRegimen {
     AllInclusive,
     MediaPension
-};
-
-struct DTFecha {
-    int dia, mes, ano;
 };
 
 struct DTExpe {
