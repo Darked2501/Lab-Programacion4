@@ -6,10 +6,10 @@
 
 #include "../include/DTFecha.h"
 
-bool operator>(const DTFecha& f1, const DTFecha& f2) {
-        if (f1.ano != f2.ano) return f1.ano > f2.ano;
-        if (f1.mes != f2.mes) return f1.mes > f2.mes;
-        return f1.dia > f2.dia;
+bool DTFecha::operator>(const DTFecha& otra) {
+        if (this->ano != otra.ano) return this->ano > otra.ano;
+        if (this->mes != otra.mes) return this->mes > otra.mes;
+        return this->dia > otra.dia;
 }
 
 #endif

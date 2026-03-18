@@ -4,7 +4,6 @@
 #include<iostream>
 #include "../include/Alojamiento.h"
 #include "../include/Datatypes.h"
-#include "../include/DTFecha.h"
 
 int main() {  // TODO
     DTFecha fecha;
@@ -12,4 +11,6 @@ int main() {  // TODO
     fecha.mes = 3;
     fecha.ano = 2001;
     Alojamiento a = Alojamiento("albaca", "comer albaca", 10, fecha, "hotel", AllInclusive, 10);
+    std::ostream& out = std::cout;
+    out << a.getDT();
 }

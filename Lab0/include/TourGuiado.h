@@ -16,6 +16,7 @@ class TourGuiado: public Experiencia {
         TourGuiado(string codigo, string desc, int precio, DTFecha fecha, string agencia, string_set lugares);
         ~TourGuiado();
         float calcularCosto();
+        string_set getLugaresVisitados();
 };
 
 #endif

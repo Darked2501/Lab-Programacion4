@@ -19,7 +19,7 @@ Alojamiento::~Alojamiento () {  // TODO
 
 
 float Alojamiento::calcularCosto () {
-    return getPrecioBase() * this->cantNoches + (this->regimen == AllInclusive? 10 * this->cantNoches: 0);
+    return (this->getPrecioBase() + (this->regimen == AllInclusive? 10 : 0)) * this->cantNoches;
 }
 
 #endif

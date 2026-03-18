@@ -31,6 +31,7 @@ class Experiencia {
     string getCodReserva();
     string getDescripcion();
     int getPrecioBase();
+    int cantTuristas();
     DTFecha getFecha();
     DTExpe getDT();
 

@@ -25,6 +25,18 @@ DTExpe Experiencia::getDT () {  // TODO: añadir a.turistas
     return a;
 }
 
+int Experiencia::cantTuristas() {
+    return this->turistas.size();
+}
+
+DTFecha Experiencia::getFecha() {
+    return this->fecha;
+}
+
+string Experiencia::getCodReserva() {
+    return this->codReserva;
+}
+
 int Experiencia::getPrecioBase () {
     return this->precioBase;
 }

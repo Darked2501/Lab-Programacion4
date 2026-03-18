@@ -16,8 +16,8 @@ EventoCultural::~EventoCultural () {  // TODO
 
 }
 
-float EventoCultural::calcularCosto () {  // TODO: (precioBase - (usoCupon? 5: 0)) * cantTuristas
-    return 1*0;
+float EventoCultural::calcularCosto () {
+    return (this->getPrecioBase() - (this->usoCupon? 5: 0)) * this->cantTuristas();
 }
 
 #endif
