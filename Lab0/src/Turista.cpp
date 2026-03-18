@@ -19,10 +19,16 @@ string Turista::toString () {
 }
 
 string_set Turista::listarExperiencias (DTFecha desde, float min, float max) { 
-    string_set a = {};
-    for (Experiencia* experiencia : this->experiencias) {
-        if(experiencia->calcularCosto()>=min && experiencia->calcularCosto()<=max && experiencia->getFecha() > desde)
-           a.insert(experiencia->getCodReserva());
+    string_set a;
+   for (std::set<Experiencia*>::iterator it = this->experiencias.begin(); it != this->experiencias.end(); ++it) {
+
+       Experiencia* experiencia = *it;
+
+    if (experiencia->calcularCosto() >= min &&
+        experiencia->calcularCosto() <= max &&
+        experiencia->getFecha() > desde) {
+        a.insert(experiencia->getCodReserva());
+    }
     }
     return a;
 }
