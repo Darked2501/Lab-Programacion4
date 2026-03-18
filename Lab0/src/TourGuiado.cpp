@@ -16,9 +16,12 @@ TourGuiado::~TourGuiado () {  // TODO
 
 }
 
+string_set TourGuiado::getLugaresVisitados() {
+    return this->lugaresVisitados;
+}
 
-float TourGuiado::calcularCosto () {  // TODO
-    return 1*0; ;
+float TourGuiado::calcularCosto () {
+    return (this->getPrecioBase() + 2) * this->cantTuristas() * this->getLugaresVisitados().size();
 }
 
 #endif

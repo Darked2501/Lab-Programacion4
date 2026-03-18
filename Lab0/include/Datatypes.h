@@ -6,21 +6,16 @@
 
 #include <string>
 #include <set>
-#include "DTFecha.h"
 
 typedef std::string string;
 typedef std::set<string> string_set;
 
+#include "DTFecha.h"
+#include "DTExpe.h"
+
 enum TipoRegimen {
     AllInclusive,
     MediaPension
-};
-
-struct DTExpe {
-    string codigoReserva;
-    string descripcion;
-    DTFecha fecha;
-    string_set turistas;
 };
 
 #endif

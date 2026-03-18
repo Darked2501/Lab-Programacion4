@@ -8,7 +8,7 @@ struct DTFecha {
     int dia, mes, ano;
 
     // Declaración del operador > (debes definirlo en .cpp)
-    bool operator>(const DTFecha& otra) const;
+    bool operator>(const DTFecha& otra);
 };
 
 #endif
